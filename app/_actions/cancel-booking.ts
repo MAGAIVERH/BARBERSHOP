@@ -1,7 +1,7 @@
-"use server"
+"use server";
 
 import { revalidatePath } from "next/cache";
-import { db } from "../_lib/prisma"
+import { db } from "../_lib/prisma";
 
 export const cancelBooking = async (bookingId: string ) => {
    return await db.booking.delete({
@@ -9,6 +9,7 @@ export const cancelBooking = async (bookingId: string ) => {
             id: bookingId,
         },
     });
-    
+
+    revalidatePath("/");
     revalidatePath("/bookings");
 };
