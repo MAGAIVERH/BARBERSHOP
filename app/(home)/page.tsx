@@ -25,6 +25,7 @@ const [barbershops, confirmedBookings ] = await Promise.all([
     include: {
       service: true, 
       barbershop: true, 
+     
     },
   }) : Promise.resolve([]),
 ]);
@@ -55,7 +56,7 @@ const [barbershops, confirmedBookings ] = await Promise.all([
             <h2 className="pl-5 text-xs mb-3 uppercase text-gray-400 font-bold">Agendamentos</h2>
             <div className="px-5 flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
               {confirmedBookings.map((booking: any) => (
-                <BookingItem key={booking.id} booking={booking} />
+                <BookingItem key={booking.id} booking={ booking as any} />
               ))}
             </div>
           </>
