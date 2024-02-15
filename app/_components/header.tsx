@@ -15,27 +15,30 @@ const  Header= () => {
 
 
     return ( 
-       <Card>
-        <CardContent className="p-5 justify-between items-center flex flex-row">
-          <Link href="/">
-           <Image src="/logo.png" alt="FSW Barber"  height={18} width={120}/>
-          </Link>
-            
-        </CardContent> 
+      <header>
+        <Card>
+          <CardContent className="p-5 justify-between items-center flex flex-row">
+            <Link href="/">
+            <Image src="/logo.png" alt="FSW Barber"  height={18} width={120}/>
+            </Link>
+              
+          </CardContent> 
 
-        <Sheet>
-            <SheetTrigger asChild>
-               <Button size="icon" variant="outline" className="z-50 absolute top-4 right-4">
-                 <MenuIcon />
-               </Button> 
+          <Sheet>
+              <SheetTrigger asChild>
+                <Button size="icon" variant="outline" className="z-50 absolute top-4 right-4">
+                  <MenuIcon />
+                </Button> 
 
-            </SheetTrigger> 
+              </SheetTrigger> 
 
-            <SheetContent className="p-0">
-                <SideMenu />
-            </SheetContent>
-         </Sheet>
-       </Card>
+              <SheetContent className="p-0">
+                  <SideMenu />
+              </SheetContent>
+          </Sheet>
+        </Card>
+      </header>
+      
 );
 }
  
