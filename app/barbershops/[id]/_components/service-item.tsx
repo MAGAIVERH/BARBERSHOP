@@ -185,7 +185,7 @@ const ServiceItem  = ({service, barbershop, isAuthenticated}: ServiceItemProps) 
                         <SheetTitle>Fazer Reserva</SheetTitle>
                     </SheetHeader>
                 
-                <div className="py-6">
+                <div className="py-6" >
                     <Calendar
                     mode="single"
                     selected={date}
@@ -215,7 +215,7 @@ const ServiceItem  = ({service, barbershop, isAuthenticated}: ServiceItemProps) 
                             textTransform: "capitalize"
                         },
                     }}
-                />
+                    />
                 </div>
                 
 

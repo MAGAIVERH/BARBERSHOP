@@ -12,7 +12,6 @@ export const authOptions: AuthOptions = {
       GoogleProvider({
     clientId: process.env.GOOGLE_CLIENT_ID as string,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
-    
   }),
   ],
   
@@ -28,3 +27,5 @@ export const authOptions: AuthOptions = {
     },
     secret: process.env.NEXT_AUTH_SECRET,
   };
+
+ // barbershop-my-project-52pvooeew-magaiver.vercel.app
